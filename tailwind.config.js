@@ -34,7 +34,10 @@
 module.exports = {
   content: [
     './index.html',
-    './src/**/*.{js,ts,jsx,tsx,html}',
+    './about.html',
+    './cart.html',
+    './collection.html',
+    './shop.html'
   ],
   theme: {
     extend: {
