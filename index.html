@@ -15,8 +15,9 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="src/main.js">
-  <link rel="stylesheet"
+  <link rel="stylesheet"  
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
   <style>
     /* For webkit browsers (Chrome, Safari, Edge) */
     ::-webkit-scrollbar {
@@ -209,70 +210,102 @@
 
   <!-- NAVBAR -->
   <div class="navbar text-white flex justify-between">
-    <div class="name cursor-auto py-[6px] pb-[6px] font-bold justify-center align-middle items-center flex sm:text-sm dxl:text-xl">
+    <div class="name cursor-auto py-[6px] pb-[6px] font-bold justify-center align-middle items-center flex xs:text-sm dxl:text-xl">
       VogueVista
     </div>
     <div class="others">
       <ul class="flex gap-[6px] py-[6px] pb-[6px] w-full">
         <li
-          class="bg-[#1a1a1a] rounded-[5px] py-1 sm:text-sm dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
+          class="bg-[#1a1a1a] xs:hidden md:flex rounded-[5px] py-1 xs:text-sm dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
           Shop</li>
           <a href="/about.html">
             
             <li
-              class="bg-[#1a1a1a] rounded-[5px] py-1 sm:text-sm dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
+              class="bg-[#1a1a1a] xs:hidden md:flex rounded-[5px] py-1 xs:text-sm dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
               About Us</li>
           </a>
         <li
-          class="bg-[#1a1a1a] rounded-[5px] py-1 sm:text-sm dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
+          class="bg-[#1a1a1a] xs:hidden md:flex rounded-[5px] py-1 xs:text-sm dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
           Collections</li>
         <li
-          class="bg-[#1a1a1a] rounded-[5px] py-1 sm:text-sm dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
+          class="bg-[#1a1a1a] xs:hidden md:flex rounded-[5px] py-1 xs:text-sm dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
           Cart</li>
         <li
-          class="bg-[#ffd166] text-black rounded-[5px] py-1 px-2 text-sm dxl:text-xl transition duration-300 ease-in-out transform hover:bg-[#ffca4d] hover:scale-105">
+          class="bg-[#ffd166] xs:hidden md:flex text-black rounded-[5px] py-1 px-2 text-sm dxl:text-xl transition duration-300 ease-in-out transform hover:bg-[#ffca4d] hover:scale-105">
           Login/Sign up</li>
+          <div class="menuicon xs:flex md:hidden w-full">
+            <span class="material-symbols-outlined">
+              menu
+              </span>
+          </div>
       </ul>
     </div>
   </div>
 
+  <div class="menulist absolute w-[50%] xs:w-[40%] z-20 right-1 p-1 rounded-xl top-10 bg-black hidden">
+    <div class="others">
+      <ul class="flex flex-col gap-[6px] py-[6px] pb-[6px] w-[100%]">
+        <li
+          class="bg-[#1a1a1a]  text-white  rounded-[5px] py-1 text-xs dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
+          Shop</li>
+          <a href="/about.html">
+            
+            <li
+              class="bg-[#1a1a1a] text-white  rounded-[5px] py-1 text-xs dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
+              About Us</li>
+          </a>
+        <li
+          class="bg-[#1a1a1a]  text-white  rounded-[5px] py-1 text-xs dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
+          Collections</li>
+        <li
+          class="bg-[#1a1a1a]  text-white  rounded-[5px] py-1 text-xs dxl:text-xl cursor-pointer px-2 transition duration-300 ease-in-out transform hover:bg-[#3f3f3f] hover:scale-105">
+          Cart</li>
+        <li
+          class="bg-[#ffd166]   text-black rounded-[5px] py-1 px-2 text-xs dxl:text-xl transition duration-300 ease-in-out transform hover:bg-[#ffca4d] hover:scale-105">
+          Login/Sign up</li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
 
   <!-- MAIN -->
   <div class="main text-white w-full h-[80vh] rounded-[5px] bg-custom-background bg-cover bg-no-repeat bg-top mb-[6px]">
-    <div class="heading relative sm:top-36 md:top-36 lg:top-32 xl:top-32 bxl:top-36 dxl:top-56  top-52  pl-20 ">
-      <p class="text-8xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-5xl xla:text-6xl bxl:text-7xl cxl:text-8xl font-light">FASHION</p>
-      <p class="text-8xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-5xl xla:text-6xl bxl:text-7xl cxl:text-8xl font-light sm:pl-16 md:pl-20 pl-36">& BRANDING</p>
-      <p class="info sm:pl-16 md:pl-20 pl-36 w-[50%] sm:text-[12px]  md:text-[15px] lg:text-[14px] sm:w-[70%] md:w-[70%] lg:w-[55%] xl:w-[50%] xla:w-[55%] bxl:w-[50%] cxl:w-[45%] bxl:text-base cxl:text-xl 2xl:text-xl  text-[#a3a3a3]">Welcome to VogueVista! Explore the latest trends and timeless
+    <div class="heading relative xs:top-36 md:top-36 lg:top-32 xl:top-32 bxl:top-36 dxl:top-56  top-52 xs:pl-5 md:pl-20 pl-20 ">
+      <p class="text-8xl xs:text-4xl md:text-5xl lg:text-6xl xl:text-5xl xla:text-6xl bxl:text-7xl cxl:text-8xl font-light">FASHION</p>
+      <p class="text-8xl xs:text-4xl md:text-5xl lg:text-6xl xl:text-5xl xla:text-6xl bxl:text-7xl cxl:text-8xl font-light xs:pl-16 md:pl-20 pl-36">& BRANDING</p>
+      <p class="info xs:pl-16 md:pl-20 pl-36 w-[50%] xs:text-[12px]  md:text-[15px] lg:text-[14px] xs:w-[80%] md:w-[70%] lg:w-[55%] xl:w-[50%] xla:w-[55%] bxl:w-[50%] cxl:w-[45%] bxl:text-base cxl:text-xl 2xl:text-xl  text-[#a3a3a3]">Welcome to VogueVista! Explore the latest trends and timeless
         collections designed to elevate your style. Your journey to a fashionable you starts here!</p>
     </div>
   </div>
 
 
   <!-- QUALITIES -->
-  <div class="quality text-white flex gap-[6px] w-auto sm:flex-wrap md:flex-wrap lg:flex-nowrap">
-    <div class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-center align-middle gap-y-1 sm:p-3 p-5 sm:w-[49.5%] md:w-[49.5%] ">
-      <div class="heading text-[#a3a3a3] text-2xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl dxl:text-3xl  font-bold ">Branding Excellence</div>
-      <div class="para text-base text-[#a3a3a3] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-base cxl:text-lg dxl:text-xl">Our brand stands for authenticity, merging creativity with quality to
+  <div class="quality text-white flex gap-[6px] w-auto xs:flex-wrap md:flex-wrap lg:flex-nowrap">
+    <div class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-center align-middle gap-y-1 xs:p-3 p-5 xs:w-[100%] md:w-[49.5%] ">
+      <div class="heading text-[#a3a3a3] text-2xl xs:text-lg md:text-xl lg:text-xl xl:text-2xl dxl:text-3xl  font-bold ">Branding Excellence</div>
+      <div class="para text-base text-[#a3a3a3] xs:text-[12px] md:text-[14px] lg:text-[14px] xl:text-base cxl:text-lg dxl:text-xl">Our brand stands for authenticity, merging creativity with quality to
         craft a distinctive identity in the fashion world.</div>
-      <div class="more text-sm dxl:text-base">
+      <div class="more text-sm sm:text-sm dxl:text-base">
 
         Read More</div>
     </div>
-    <div class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-center align-middle gap-y-1 sm:p-3  p-5 sm:w-[49.5%] md:w-[49.5%]">
-      <div class="heading text-[#a3a3a3] text-2xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl dxl:text-3xl font-bold">Timeless Identity</div>
-      <div class="para text-base text-[#a3a3a3] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-base cxl:text-lg dxl:text-lg">At VogueVista, we create pieces that reflect a timeless identity,
+    <div class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-center align-middle gap-y-1 xs:p-3  p-5 xs:w-[100%] md:w-[49.5%]">
+      <div class="heading text-[#a3a3a3] text-2xl xs:text-lg md:text-xl lg:text-xl xl:text-2xl dxl:text-3xl font-bold">Timeless Identity</div>
+      <div class="para text-base text-[#a3a3a3] xs:text-[12px] md:text-[14px] lg:text-[14px] xl:text-base cxl:text-lg dxl:text-lg">At VogueVista, we create pieces that reflect a timeless identity,
         ensuring your style stays unique and unforgettable.</div>
       <div class="more text-sm dxl:text-base">Read More</div>
     </div>
-    <div class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-center align-middle gap-y-1 sm:p-3  p-5 sm:w-[49.5%] md:w-[49.5%]">
-      <div class="heading text-[#a3a3a3] text-2xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-bold dxl:text-3xl">Innovative Craftsmanship</div>
-      <div class="para text-base text-[#a3a3a3] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-base cxl:text-lg dxl:text-xl">We combine modern design elements with expert craftsmanship to deliver
+    <div class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-center align-middle gap-y-1 xs:p-3  p-5 xs:w-[100%] md:w-[49.5%]">
+      <div class="heading text-[#a3a3a3] text-2xl xs:text-lg md:text-xl lg:text-xl xl:text-2xl font-bold dxl:text-3xl">Innovative Craftsmanship</div>
+      <div class="para text-base text-[#a3a3a3] xs:text-[12px] md:text-[14px] lg:text-[14px] xl:text-base cxl:text-lg dxl:text-xl">We combine modern design elements with expert craftsmanship to deliver
         fashion that speaks to your individuality.</div>
       <div class="more text-sm dxl:text-base">Read More</div>
     </div>
-    <div class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-center align-middle gap-y-1 sm:p-3  p-5 sm:w-[49.5%] md:w-[49.5%]">
-      <div class="heading text-[#a3a3a3] text-2xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-bold dxl:text-3xl">Sophisticated Elegance</div>
-      <div class="para text-base text-[#a3a3a3] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-base cxl:text-lg dxl:text-xl">Elegance is at the heart of our identity. Every collection embodies
+    <div class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-center align-middle gap-y-1 xs:p-3  p-5 xs:w-[100%] md:w-[49.5%]">
+      <div class="heading text-[#a3a3a3] text-2xl xs:text-lg md:text-xl lg:text-xl xl:text-2xl font-bold dxl:text-3xl">Sophisticated Elegance</div>
+      <div class="para text-base text-[#a3a3a3] xs:text-[12px] md:text-[14px] lg:text-[14px] xl:text-base cxl:text-lg dxl:text-xl">Elegance is at the heart of our identity. Every collection embodies
         sophistication, blending tradition with innovation.</div>
       <div class="more text-sm dxl:text-base">Read More</div>
     </div>
@@ -283,26 +316,26 @@
   <!-- TRUSTED COMPANIES SECTION -->
   <div class="companies my-3">
     <div class="companylist flex text-white justify-between items-center">
-      <div class="company1 sm:w-[8%] w-[10%]">
+      <div class="company1 xs:w-[8%] w-[10%]">
         <img src="Images/armani-logo.png" alt="" class="h-[80px] invert w-auto object-contain">
       </div>
-      <div class="company2 sm:w-[8%] w-[10%]">
+      <div class="company2 xs:w-[8%] w-[10%]">
         <img src="Images/asos-logo-1.png" alt="" class="h-[80px] invert w-auto object-contain">
       </div>
-      <div class="company3 sm:w-[8%] w-[10%]">
+      <div class="company3 xs:w-[8%] w-[10%]">
         <img src="Images/black-minimalist-logo-sample-for-brands-on-a-transparent-background-free-png.webp" alt=""
           class="h-[80px] invert w-auto object-contain">
       </div>
-      <div class="company4 sm:w-[8%] w-[10%]">
+      <div class="company4 xs:w-[8%] w-[10%]">
         <img src="Images/Champion-Brand-Logo-Transparent-File.png" class="invert w-auto object-contain h-[80px]" alt="">
       </div>
-      <div class="company5 sm:w-[8%] w-[10%]">
+      <div class="company5 xs:w-[8%] w-[10%]">
         <img src="Images/nike-4-logo-png-transparent.png" alt="" class="h-[80px] invert w-auto object-contain">
       </div>
-      <div class="company6 sm:w-[8%] w-[10%] text-white">
+      <div class="company6 xs:w-[8%] w-[10%] text-white">
         <img src="Images/Zara_(retailer)-Logo.wine.png" class="invert w-auto object-contain h-[80px]" alt="">
       </div>
-      <div class="company7 sm:w-[8%] w-[10%] text-white">
+      <div class="company7 xs:w-[8%] w-[10%] text-white">
         <img src="Images/hm-logo-black-and-white.png" class="invert w-auto object-contain h-[50px]" alt="">
       </div>
     </div>
@@ -314,33 +347,33 @@
 
 
   <!-- BRANDING 1 -->
-  <div class="branding1 w-full h-auto flex sm:flex-col md:flex-row gap-[6px] mb-[6px]">
+  <div class="branding1 w-full h-auto flex xs:flex-col md:flex-row gap-[6px] mb-[6px]">
 
     <!-- IMAGE -->
-    <div class="relative image1 rounded-[5px] w-[50%] sm:w-[100%] md:w-[50%] bg-dark-background bg-cover bg-center bg-no-repeat h-[50vh] ">
+    <div class="relative image1 rounded-[5px] w-[50%] xs:w-[100%] md:w-[50%] bg-dark-background bg-cover bg-center bg-no-repeat h-[50vh] ">
       <div class="absolute inset-0 bg-black bg-opacity-40 rounded-[5px]"></div>
       <p class="relative text-white z-10"></p>
     </div>
 
     <!-- TEXT -->
-    <div class="text1 w-[50%] sm:w-[100%] md:w-[50%] bg-[#1a1a1a] rounded-[5px] h-[50vh] p-10 sm:p-5 md:p-5 lg:p-5 xl:p-10">
-      <div class="cont flex gap-14 sm:gap-4 md:gap-2 lg:gap-7  xla:gap-7 bxl:gap-7 dxl:gap-32 flex-col">
+    <div class="text1 w-[50%] xs:w-[100%] md:w-[50%] bg-[#1a1a1a] rounded-[5px] h-[50vh] xs:h-[60vh] p-10 xs:p-5 md:p-5 lg:p-5 xl:p-10">
+      <div class="cont flex gap-14 xs:gap-4 md:gap-2 lg:gap-7  xla:gap-7 bxl:gap-7 dxl:gap-32 flex-col">
         <div class="1">
 
           <div class="icon text-[#a3a3a3] text-sm dxl:text-lg">info</div>
         </div>
         <div class="2">
 
-          <div class="heading text-[#a3a3a3] text-2xl sm:text-xl md:text-xl lg:text-xl  xla:text-xl bxl:text-2xl cxl:text-2xl dxl:text-3xl font-bold pb-3 ">Bringing Style and Innovation to Life</div>
+          <div class="heading text-[#a3a3a3] text-2xl xs:text-lg md:text-xl lg:text-xl  xla:text-xl bxl:text-2xl cxl:text-2xl dxl:text-3xl font-bold pb-3 ">Bringing Style and Innovation to Life</div>
           <div class="para flex md:flex-col gap-7 md:gap-2  bxl:pb-2">
 
-            <div class="para1 text-[#a3a3a3] text-base sm:text-[14px] md:text-[13px] lg:text-xs bxl:text-base  cxl:text-lg dxl:text-xl w-[50%] md:w-[100%] leading-tight">
+            <div class="para1 text-[#a3a3a3] text-base xs:text-[12px] md:text-[13px] lg:text-xs bxl:text-base  cxl:text-lg dxl:text-xl w-[50%] md:w-[100%] leading-tight">
               Welcome to VogueVista, where fashion meets innovation. As a top clothing company, we deliver exclusive
               collections blending modern trends with timeless elegance. Each garment is crafted with precision,
               designed to make a statement.
             </div>
 
-            <div class="para2 text-[#a3a3a3] text-base sm:text-[14px] md:text-[13px] lg:text-xs bxl:text-base  cxl:text-lg dxl:text-xl w-[50%] md:w-[100%] leading-tight ">
+            <div class="para2 text-[#a3a3a3] text-base xs:text-[12px] md:text-[13px] lg:text-xs bxl:text-base  cxl:text-lg dxl:text-xl w-[50%] md:w-[100%] leading-tight ">
               Additionally, VogueVista serves as a premier agency for clothing businesses. We help brands redefine their
               approach with expertise in branding, marketing, and growth. Our tailored solutions elevate your clothing
               business, ensuring it stands out in the fashion landscape.
@@ -358,67 +391,67 @@
 
 
   <!-- BRANDING 2 -->
-  <div class="branding2 w-full flex gap-[6px]  h-[70vh] bxl:h-[80vh] sm:mb-44 md:mb-24 lg:mb-0">
+  <div class="branding2 w-full flex xs:flex-col-reverse md:flex-row gap-[6px]  h-[70vh] bxl:h-[80vh] xs:mb-44 md:mb-24 lg:mb-0">
 
     <!-- TEXT -->
-    <div class="text1 w-[50%] sm:w-[100%] md:w-[50%] rounded-[5px] h-[100%]">
-      <div class="sections flex flex-col gap-2 h-full sm:h-[140%] md:h-[120%] lg:h-[100%]">
+    <div class="text1 w-[50%] xs:w-[100%] md:w-[50%] rounded-[5px] h-[100%]">
+      <div class="sections flex  flex-col gap-2 h-full xs:h-[140%] md:h-[120%] lg:h-[100%]">
 
         <!-- Branding and Identity -->
-        <div class="sec1 bg-[#1a1a1a] h-1/4 flex items-start rounded-[5px] text-white p-4 sm:py-1 md:py-1 lg:py-1 xl:p-4 xla:py-2 dxl:py-8 relative section-hover">
+        <div class="sec1 bg-[#1a1a1a] h-1/4 flex items-start rounded-[5px] text-white p-4 xs:py-1 md:py-1 lg:py-1 xl:p-4 xla:py-2 dxl:py-8 relative section-hover">
           <!-- Positioned Arrow Icon -->
           <span
             class="material-symbols-outlined absolute right-4 top-1/2 transform -translate-y-1/2">chevron_right</span>
 
           <!-- Text Content -->
           <div class="flex flex-col w-full">
-            <h2 class=" text-[#a3a3a3] mb-2 sm:mb-0 md:mb-0 lg:mb-0  xla:mb-0 text-2xl sm:text-xl md:text-base lg:text-base  xla:text-lg cxl:text-2xl 2xl:text-xl dxl:text-3xl font-bold">Branding and Identity</h2>
-            <p class="text-sm text-[#a3a3a3] w-[95%] sm:text-[14px] md:text-xs lg:text-xs  xla:text-xs bxl:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">Elevate your brand with a cohesive identity that resonates with
+            <h2 class=" text-[#a3a3a3] mb-2 xs:mb-0 md:mb-0 lg:mb-0  xla:mb-0 text-2xl xs:text-lg md:text-base lg:text-base  xla:text-lg cxl:text-2xl 2xl:text-xl dxl:text-3xl font-bold">Branding and Identity</h2>
+            <p class="text-sm text-[#a3a3a3] w-[95%] xs:text-[12px] md:text-xs lg:text-xs  xla:text-xs bxl:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">Elevate your brand with a cohesive identity that resonates with
               your target audience. We craft compelling brand stories and visuals that set you apart from the
               competition and build lasting connections.</p>
           </div>
         </div>
 
         <!-- Video Production -->
-        <div class="sec2 bg-[#1a1a1a] h-1/4 flex items-start rounded-[5px] text-white p-4 sm:py-1 md:py-1 lg:py-1 xl:p-4 xla:py-2 dxl:py-8 relative section-hover">
+        <div class="sec2 bg-[#1a1a1a] h-1/4 flex items-start rounded-[5px] text-white p-4 xs:py-1 md:py-1 lg:py-1 xl:p-4 xla:py-2 dxl:py-8 relative section-hover">
           <!-- Positioned Arrow Icon -->
           <span
             class="material-symbols-outlined absolute right-4 top-1/2 transform -translate-y-1/2">chevron_right</span>
 
           <!-- Text Content -->
           <div class="flex flex-col w-full">
-            <h2 class=" text-[#a3a3a3] mb-2 sm:mb-0 md:mb-0 lg:mb-0  xla:mb-0 text-2xl sm:text-xl md:text-base lg:text-base  xla:text-lg font-bold cxl:text-2xl 2xl:text-xl dxl:text-3xl">Video Production</h2>
-            <p class="text-sm text-[#a3a3a3] w-[95%] sm:text-[14px] md:text-xs lg:text-xs  xla:text-xs bxl:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">Capture attention with high-quality video content that showcases
+            <h2 class=" text-[#a3a3a3] mb-2 xs:mb-0 md:mb-0 lg:mb-0  xla:mb-0 text-2xl xs:text-lg md:text-base lg:text-base  xla:text-lg font-bold cxl:text-2xl 2xl:text-xl dxl:text-3xl">Video Production</h2>
+            <p class="text-sm text-[#a3a3a3] w-[95%] xs:text-[12px] md:text-xs lg:text-xs  xla:text-xs bxl:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">Capture attention with high-quality video content that showcases
               your brand’s message and engages viewers. From concept to final cut, we handle all aspects of video
               production to create impactful visual stories.</p>
           </div>
         </div>
 
         <!-- Marketing and Advertising -->
-        <div class="sec3 bg-[#1a1a1a] h-1/4 flex items-start rounded-[5px] text-white p-4 sm:py-1 md:py-1 lg:py-1 xl:p-4 xla:py-2 dxl:py-8  relative section-hover">
+        <div class="sec3 bg-[#1a1a1a] h-1/4 flex items-start rounded-[5px] text-white p-4 xs:py-1 md:py-1 lg:py-1 xl:p-4 xla:py-2 dxl:py-8  relative section-hover">
           <!-- Positioned Arrow Icon -->
           <span
             class="material-symbols-outlined absolute right-4 top-1/2 transform -translate-y-1/2">chevron_right</span>
 
           <!-- Text Content -->
           <div class="flex flex-col w-full">
-            <h2 class="text-[#a3a3a3] mb-2 sm:mb-0 md:mb-0 lg:mb-0  xla:mb-0 text-2xl sm:text-xl md:text-base lg:text-base  xla:text-lg cxl:text-2xl font-bold 2xl:text-xl dxl:text-3xl">Marketing and Advertising</h2>
-            <p class="text-sm text-[#a3a3a3] w-[95%] sm:text-[14px] md:text-xs lg:text-xs  xla:text-xs bxl:text-xm cxl:text-lg 2xl:text-base dxl:text-xl">Drive growth with targeted marketing strategies and creative
+            <h2 class="text-[#a3a3a3] mb-2 xs:mb-0 md:mb-0 lg:mb-0  xla:mb-0 text-2xl xs:text-lg md:text-base lg:text-base  xla:text-lg cxl:text-2xl font-bold 2xl:text-xl dxl:text-3xl">Marketing and Advertising</h2>
+            <p class="text-sm text-[#a3a3a3] w-[95%] xs:text-[12px] md:text-xs lg:text-xs  xla:text-xs bxl:text-xm cxl:text-lg 2xl:text-base dxl:text-xl">Drive growth with targeted marketing strategies and creative
               advertising campaigns. We develop data-driven approaches to increase visibility, attract new customers,
               and maximize your return on investment.</p>
           </div>
         </div>
 
         <!-- Customized Solutions -->
-        <div class="sec4 bg-[#1a1a1a] h-1/4 flex items-start rounded-[5px] text-white p-4 sm:py-1 md:py-1 lg:py-1 xl:p-4 xla:py-2  dxl:py-8 relative section-hover">
+        <div class="sec4 bg-[#1a1a1a] h-1/4 flex items-start rounded-[5px] text-white p-4 xs:py-1 md:py-1 lg:py-1 xl:p-4 xla:py-2  dxl:py-8 relative section-hover">
           <!-- Positioned Arrow Icon -->
           <span
             class="material-symbols-outlined absolute right-4 top-1/2 transform -translate-y-1/2">chevron_right</span>
 
           <!-- Text Content -->
           <div class="flex flex-col w-full">
-            <h2 class="text-[#a3a3a3] mb-2 sm:mb-0 md:mb-0 lg:mb-0  xla:mb-0 text-2xl sm:text-xl md:text-base lg:text-base  xla:text-lg cxl:text-2xl font-bold 2xl:text-xl dxl:text-3xl">Customized Solutions</h2>
-            <p class="text-sm text-[#a3a3a3] w-[95%] sm:text-[14px] md:text-xs lg:text-xs  xla:text-xs bxl:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">We offer tailored solutions that fit your unique business needs.
+            <h2 class="text-[#a3a3a3] mb-2 xs:mb-0 md:mb-0 lg:mb-0  xla:mb-0 text-2xl xs:text-lg md:text-base lg:text-base  xla:text-lg cxl:text-2xl font-bold 2xl:text-xl dxl:text-3xl">Customized Solutions</h2>
+            <p class="text-sm text-[#a3a3a3] w-[95%] xs:text-[12px] md:text-xs lg:text-xs  xla:text-xs bxl:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">We offer tailored solutions that fit your unique business needs.
               Whether it’s a complete brand overhaul or specific project needs, our team is dedicated to delivering
               results that align with your vision and goals.</p>
           </div>
@@ -429,7 +462,7 @@
 
 
     <!-- IMAGE -->
-    <div class="relative image1 rounded-[5px] w-[50%] bg-Another-bg bg-cover bg-center bg-no-repeat sm:h-[140%] md:h-[120%] h-[63.3vh] lg:h-[70vh] xl:h-[75vh] xla:h-[70vh] bxl:h-[80vh]">
+    <div class="relative image1 rounded-[5px] w-[50%] bg-Another-bg bg-cover bg-center bg-no-repeat xs:h-[140%] md:h-[120%] h-[63.3vh] lg:h-[70vh] xl:h-[75vh] xla:h-[70vh] bxl:h-[80vh]">
       <div class="absolute inset-0 bg-black bg-opacity-50 rounded-[5px]"></div>
       <p class="relative text-white z-10"></p>
     </div>
@@ -444,35 +477,35 @@
 
       The VogueVista Approach
     </h2>
-    <div class="approaches flex mt-7 gap-[6px] sm:flex-wrap md:flex-wrap lg:flex-wrap xl:flex-nowrap">
+    <div class="approaches flex mt-7 gap-[6px] xs:flex-wrap md:flex-wrap lg:flex-wrap xl:flex-nowrap">
 
-      <div class="approach1 bg-[#1a1a1a] rounded-[5px] sm:p-5 md:p-5 p-7 w-1/4 sm:w-[49.5%] md:w-[49.5%] lg:w-[49.5%] xl:w-1/4">
-        <div class="head text-2xl font-bold cursor-pointer text-[#a3a3a3] sm:text-xl md:text-xl 2xl:text-2xl dxl:text-3xl">Tailored Solutions</div>
-        <div class="para text-base text-[#a3a3a3] sm:text-[14px] md:text-[14px] xla:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">At VogueVista, we believe in the power of personalization. We
+      <div class="approach1 bg-[#1a1a1a] rounded-[5px] sm:p-5 xs:p-5 p-7 w-1/4 xs:w-[100%] md:w-[49.5%] lg:w-[49.5%] xl:w-1/4">
+        <div class="head text-2xl font-bold cursor-pointer text-[#a3a3a3] xs:text-lg md:text-xl 2xl:text-2xl dxl:text-3xl">Tailored Solutions</div>
+        <div class="para text-base text-[#a3a3a3] xs:text-[12px] md:text-[14px] xla:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">At VogueVista, we believe in the power of personalization. We
           understand that every brand and business faces unique goals, challenges, and opportunities. That’s why we
           meticulously customize our approach to meet your specific needs and objectives, ensuring every strategy we
           create is both relevant and effective in helping you achieve success.</div>
       </div>
     
-      <div class="approach2 bg-[#1a1a1a] rounded-[5px] sm:p-5 md:p-5 p-7 w-1/4 sm:w-[49.5%] md:w-[49.5%] lg:w-[49.5%] xl:w-1/4">
-        <div class="head text-2xl font-bold cursor-pointer text-[#a3a3a3] sm:text-xl md:text-xl 2xl:text-2xl dxl:text-3xl">Expertise</div>
-        <div class="para text-base text-[#a3a3a3] sm:text-[14px] md:text-[14px] xla:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">Our team at VogueVista consists of seasoned professionals with
+      <div class="approach2 bg-[#1a1a1a] rounded-[5px] xs:p-5 md:p-5 p-7 w-1/4 xs:w-[100%] md:w-[49.5%] lg:w-[49.5%] xl:w-1/4">
+        <div class="head text-2xl font-bold cursor-pointer text-[#a3a3a3] xs:text-lg md:text-xl 2xl:text-2xl dxl:text-3xl">Expertise</div>
+        <div class="para text-base text-[#a3a3a3] xs:text-[12px] md:text-[14px] xla:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">Our team at VogueVista consists of seasoned professionals with
           extensive experience across the fashion industry and digital strategy. This expertise enables us to deliver
           solutions that drive real impact. Our key strengths include deep Fashion Industry Knowledge, advanced Digital
           Strategy Proficiency, and versatile Cross-Disciplinary Skills to ensure all your needs are met.</div>
       </div>
     
-      <div class="approach3 bg-[#1a1a1a] rounded-[5px] sm:p-5 md:p-5 p-7 w-1/4 sm:w-[49.5%] md:w-[49.5%] lg:w-[49.5%] xl:w-1/4">
-        <div class="head text-2xl font-bold cursor-pointer text-[#a3a3a3] sm:text-xl md:text-xl 2xl:text-2xl dxl:text-3xl">Results-Driven</div>
-        <div class="para text-base text-[#a3a3a3] sm:text-[14px] md:text-[14px] xla:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">Our approach is centered on measurable results that contribute to
+      <div class="approach3 bg-[#1a1a1a] rounded-[5px] xs:p-5 md:p-5 p-7 w-1/4 xs:w-[100%] md:w-[49.5%] lg:w-[49.5%] xl:w-1/4">
+        <div class="head text-2xl font-bold cursor-pointer text-[#a3a3a3] xs:text-lg md:text-xl 2xl:text-2xl dxl:text-3xl">Results-Driven</div>
+        <div class="para text-base text-[#a3a3a3] xs:text-[12px] md:text-[14px] xla:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">Our approach is centered on measurable results that contribute to
           your brand’s growth and success. We prioritize outcomes that make a tangible difference, including
           establishing Clear Metrics, Performance Optimization, and Goal Achievement. This commitment ensures that every
           decision we make is focused on delivering value and progress.</div>
       </div>
     
-      <div class="approach4 bg-[#1a1a1a] rounded-[5px] sm:p-5 md:p-5 p-7 w-1/4 sm:w-[49.5%] md:w-[49.5%] lg:w-[49.5%] xl:w-1/4">
-        <div class="head text-2xl font-bold cursor-pointer text-[#a3a3a3] sm:text-xl md:text-xl 2xl:text-2xl dxl:text-3xl">Collaborative Partnership</div>
-        <div class="para text-base text-[#a3a3a3] sm:text-[14px] md:text-[14px] xla:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">At VogueVista, we see each client relationship as a true partnership.
+      <div class="approach4 bg-[#1a1a1a] rounded-[5px] xs:p-5 md:p-5 p-7 w-1/4 xs:w-[100%] md:w-[49.5%] lg:w-[49.5%] xl:w-1/4">
+        <div class="head text-2xl font-bold cursor-pointer text-[#a3a3a3] sm:text-lg md:text-xl 2xl:text-2xl dxl:text-3xl">Collaborative Partnership</div>
+        <div class="para text-base text-[#a3a3a3] xs:text-[12px] md:text-[14px] xla:text-sm cxl:text-lg 2xl:text-base dxl:text-xl">At VogueVista, we see each client relationship as a true partnership.
           We foster collaboration through Open Communication, Shared Goals, and Joint Problem-Solving to ensure our
           strategies are aligned with your vision. This partnership model guarantees that we’re always working together
           to achieve your long-term success.</div>
@@ -497,8 +530,8 @@
 
       <!-- Text Content on Bottom Left -->
       <div class="text-content relative z-10 p-4">
-        <div class="heading text-4xl sm:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Exclusive Fashion Collections</div>
-        <div class="info text-lg sm:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Trendsetting styles with timeless appeal.</div>
+        <div class="heading text-4xl xs:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Exclusive Fashion Collections</div>
+        <div class="info text-lg xs:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Trendsetting styles with timeless appeal.</div>
       </div>
     </div>
 
@@ -512,8 +545,8 @@
 
       <!-- Text Content on Bottom Left -->
       <div class="text-content relative z-10 p-4">
-        <div class="heading text-4xl sm:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Brand Strategy Consulting</div>
-        <div class="info text-lg sm:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Tailored growth plans for fashion businesses.</div>
+        <div class="heading text-4xl xs:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Brand Strategy Consulting</div>
+        <div class="info text-lg xs:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Tailored growth plans for fashion businesses.</div>
       </div>
     </div>
 
@@ -526,8 +559,8 @@
 
       <!-- Text Content on Bottom Left -->
       <div class="text-content relative z-10 p-4">
-        <div class="heading text-4xl sm:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Digital Marketing Solutions</div>
-        <div class="info text-lg sm:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Boost visibility and online engagement.</div>
+        <div class="heading text-4xl xs:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Digital Marketing Solutions</div>
+        <div class="info text-lg xs:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Boost visibility and online engagement.</div>
       </div>
     </div>
 
@@ -540,8 +573,8 @@
 
       <!-- Text Content on Bottom Left -->
       <div class="text-content relative z-10 p-4">
-        <div class="heading text-4xl sm:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Custom Garment Design</div>
-        <div class="info text-lg sm:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Bespoke pieces crafted for your vision.</div>
+        <div class="heading text-4xl xs:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Custom Garment Design</div>
+        <div class="info text-lg xs:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Bespoke pieces crafted for your vision.</div>
       </div>
     </div>
 
@@ -554,8 +587,8 @@
 
       <!-- Text Content on Bottom Left -->
       <div class="text-content relative z-10 p-4">
-        <div class="heading text-4xl sm:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Creative Content Production</div>
-        <div class="info text-lg sm:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">High-quality visuals for brand storytelling.</div>
+        <div class="heading text-4xl xs:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Creative Content Production</div>
+        <div class="info text-lg xs:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">High-quality visuals for brand storytelling.</div>
       </div>
     </div>
 
@@ -568,8 +601,8 @@
 
       <!-- Text Content on Bottom Left -->
       <div class="text-content relative z-10 p-4">
-        <div class="heading text-4xl sm:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Retail & E-Commerce Support</div>
-        <div class="info text-lg sm:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Elevate your sales channels effortlessly.</div>
+        <div class="heading text-4xl xs:text-2xl md:text-2xl font-medium cursor-pointer text-[#a3a3a3] dxl:text-5xl">Retail & E-Commerce Support</div>
+        <div class="info text-lg xs:text-base md:text-base text-[#a3a3a3] dxl:text-2xl">Elevate your sales channels effortlessly.</div>
       </div>
     </div>
 
@@ -578,12 +611,12 @@
   </div>
 
   <div
-    class="getintouch relative h-[30vh] bg-[#ffd166] text-black mt-[6px] rounded-[5px] p-4 flex  flex-col items-start justify-end">
-    <div class="stuff p-4 flex flex-col gap-3">
-      <div class="heading text-xl sm:text-base md:text-base font-bold text-black dxl:text-2xl">CONTACT</div>
-      <div class="text text-5xl sm:text-xl md:text-2xl lg:text-3xl xl:text-5l font-normal dxl:text-5xl">LET'S MAKE YOUR FASHION BRAND SHINE</div>
-      <div class="button absolute cursor-pointer right-10 bottom-6 text-white bg-black p-4 rounded-[5px] hover-button">
-        GET IN TOUCH
+    class="getintouch relative h-[30vh] bg-[#ffd166] text-black mt-[6px] rounded-[5px] p-4 xs:px-2 md:p-4 flex  flex-col items-start justify-end">
+    <div class="stuff p-4 xs:px-2 md:p-4 flex flex-col gap-3">
+      <div class="heading text-xl xs:text-base md:text-base font-bold text-black dxl:text-2xl">CONTACT</div>
+      <div class="text text-5xl xs:text-xs md:text-2xl lg:text-3xl xl:text-5l font-normal dxl:text-5xl">LET'S MAKE YOUR FASHION BRAND SHINE</div>
+      <div class="button absolute xs:text-base md:text-lg cursor-pointer xs:right-5 md:right-10 right-10 bottom-6 text-white bg-black xs:p-2 md:p-4 p-4 rounded-[5px] hover-button">
+        GET IN TOUCH 
       </div>
     </div>
   </div>
@@ -600,10 +633,10 @@
 
 
   <!-- SOCIAL MEDIA -->
-  <div class="quality text-white sm:flex-wrap md:flex-nowrap flex md:flex-col lg:flex-row gap-[6px] w-auto">
+  <div class="quality text-white xs:flex-wrap md:flex-nowrap flex md:flex-col lg:flex-row gap-[6px] w-auto">
     <div
-      class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-between sm:w-[49.5%] md:w-[100%] w-[25%] align-middle gap-y-1 p-5 hover-effect">
-      <div class="stuff flex flex-col md:gap-5 gap-20">
+      class="quality1 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-between xs:w-[100%] md:w-[100%] w-[25%] align-middle gap-y-1 p-5 hover-effect">
+      <div class="stuff flex flex-col xs:gap-3 md:gap-5 gap-20">
         <div class="icons flex justify-between">
           <div class="icon1">
             <img src="Images/instagram.png" alt="" class="w-6 invert justify-between h-auto icon-hover">
@@ -623,8 +656,8 @@
     </div>
 
     <div
-      class="quality2 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-between sm:w-[49.5%] md:w-[100%] w-[25%] align-middle gap-y-1 p-5 hover-effect">
-      <div class="stuff flex flex-col md:gap-5 gap-20">
+      class="quality2 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-between xs:w-[100%] md:w-[100%] w-[25%] align-middle gap-y-1 p-5 hover-effect">
+      <div class="stuff flex flex-col xs:gap-3 md:gap-5 gap-20">
         <div class="icons flex justify-between">
           <div class="icon1">
             <img src="Images/twitter.png" alt="" class="w-6 invert justify-between h-auto icon-hover">
@@ -644,8 +677,8 @@
     </div>
 
     <div
-      class="quality3 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-between sm:w-[49.5%] md:w-[100%] w-[25%] align-middle gap-y-1 p-5 hover-effect">
-      <div class="stuff flex flex-col md:gap-5 gap-20">
+      class="quality3 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-between xs:w-[100%] md:w-[100%] w-[25%] align-middle gap-y-1 p-5 hover-effect">
+      <div class="stuff flex flex-col xs:gap-3 md:gap-5 gap-20">
         <div class="icons flex justify-between">
           <div class="icon1">
             <img src="Images/dribbble-logo.png" alt="" class="w-6 invert justify-between h-auto icon-hover">
@@ -664,8 +697,8 @@
     </div>
 
     <div
-      class="quality4 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-between sm:w-[49.5%] md:w-[100%] w-[25%] align-middle gap-y-1 p-5 hover-effect">
-      <div class="stuff flex flex-col md:gap-5 gap-20">
+      class="quality4 bg-[#1a1a1a] rounded-[5px] flex flex-col justify-between xs:w-[100%] md:w-[100%] w-[25%] align-middle gap-y-1 p-5 hover-effect">
+      <div class="stuff flex flex-col xs:gap-3 md:gap-5 gap-20">
         <div class="icons flex justify-between">
           <div class="icon1">
             <img src="Images/behance.png" alt="" class="w-6 invert justify-between h-auto icon-hover">
@@ -697,19 +730,19 @@
     <h2 class="text-2xl font-bold text-white mb-4">
       LATEST NEWS
     </h2>
-    <div class="latestnewscontent flex w-auto sm:flex-wrap md:flex-wrap lg:flex-nowrap justify-between gap-[6px] ">
-      <div class="news1 bg-[#1a1a1a] w-full sm:w-[49.5%] md:w-[49.5%] rounded-[5px] md:h-[80vh] h-[85vh]">
+    <div class="latestnewscontent flex w-auto xs:flex-wrap md:flex-wrap lg:flex-nowrap justify-between gap-[6px] ">
+      <div class="news1 bg-[#1a1a1a] w-full xs:w-[100%] md:w-[49.5%] rounded-[5px] md:h-[80vh] h-[85vh]">
         <div class="img relative  bg-cover ">
-          <img src="Images/Ideas photo.jpeg" alt="" class="h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh]  xla:h-[50vh] cxl:h-[50vh] dxl:h-[60vh] rounded-[5px] w-full">
+          <img src="Images/Ideas photo.jpeg" alt="" class="h-[60vh] xs:h-[50vh] md:h-[40vh] lg:h-[40vh]  xla:h-[50vh] cxl:h-[50vh] dxl:h-[60vh] rounded-[5px] w-full">
           <div class="imgtitle absolute bottom-3 left-5 bg-[#333] px-2 rounded-[3px]">MARKETING</div>
         </div>
 
         <div class="text px-5 py-3">
 
-          <div class="heading font-bold text-lg sm:text-xl md:text-xl bxl:text-xl 2xl:text-2xl dxl:text-3xl text-[#a3a3a3] hover-heading">
+          <div class="heading font-bold text-lg xs:text-lg md:text-xl bxl:text-xl 2xl:text-2xl dxl:text-3xl text-[#a3a3a3] hover-heading">
             The Power Of Influencer Marketing
           </div>
-          <div class="info text-[#a3a3a3] sm:text-[14px] lg:text-sm cxl:text-base 2xl:text-base dxl:text-xl">
+          <div class="info text-[#a3a3a3] xs:text-[12px] lg:text-sm cxl:text-base 2xl:text-base dxl:text-xl">
             Influencer marketing uses social media figures to promote brands, driving awareness and engagement through
             trusted, authentic recommendations. It’s an effective way for businesses to connect with target audiences
             and boost conversions.
@@ -724,18 +757,18 @@
       </div>
 
 
-      <div class="news2 bg-[#1a1a1a] w-full sm:w-[49.5%] md:w-[49.5%] rounded-[5px] md:h-[80vh] h-[85vh]">
+      <div class="news2 bg-[#1a1a1a] w-full xs:w-[100%] md:w-[49.5%] rounded-[5px] md:h-[80vh] h-[85vh]">
         <div class="img relative  bg-cover ">
-          <img src="Images/ROUGH SKETCHES.jpeg" alt="" class="h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh]  xla:h-[50vh] cxl:h-[50vh] dxl:h-[60vh] rounded-[5px] w-full">
+          <img src="Images/ROUGH SKETCHES.jpeg" alt="" class="h-[60vh] xs:h-[50vh] md:h-[40vh] lg:h-[40vh]  xla:h-[50vh] cxl:h-[50vh] dxl:h-[60vh] rounded-[5px] w-full">
           <div class="imgtitle absolute bottom-3 left-5 bg-[#333] px-2 rounded-[3px]">BRANDING</div>
         </div>
 
         <div class="text px-5 py-3">
 
-          <div class="heading font-bold text-lg sm:text-xl md:text-xl bxl:text-xl 2xl:text-2xl dxl:text-3xl text-[#a3a3a3] hover-heading">
+          <div class="heading font-bold text-lg xs:text-lg md:text-xl bxl:text-xl 2xl:text-2xl dxl:text-3xl text-[#a3a3a3] hover-heading">
             Effective Advertising Strategies for Fashion Brands
           </div>
-          <div class="info text-[#a3a3a3] sm:text-[14px] md:text-sm lg:text-sm cxl:text-base 2xl:text-base dxl:text-xl ">
+          <div class="info text-[#a3a3a3] xs:text-[12px] md:text-sm lg:text-sm cxl:text-base 2xl:text-base dxl:text-xl ">
             Discover essential advertising strategies for fashion brands, including social media engagement, influencer
             collaborations, content marketing, email campaigns, and sustainability initiatives. Elevate your brand’s
             visibility and connect authentically with your audience to drive sales and loyalty.
@@ -746,18 +779,18 @@
       </div>
 
 
-      <div class="news3 bg-[#1a1a1a] w-full sm:w-[49.5%] md:w-[49.5%] rounded-[5px] md:h-[80vh] h-[85vh]">
+      <div class="news3 bg-[#1a1a1a] w-full xs:w-[100%] md:w-[49.5%] rounded-[5px] md:h-[80vh] h-[85vh]">
         <div class="img relative  bg-cover ">
-          <img src="Images/download.jpeg" alt="" class="h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh]  xla:h-[50vh] cxl:h-[50vh] dxl:h-[60vh] rounded-[5px] w-full">
+          <img src="Images/download.jpeg" alt="" class="h-[60vh] xs:h-[50vh] md:h-[40vh] lg:h-[40vh]  xla:h-[50vh] cxl:h-[50vh] dxl:h-[60vh] rounded-[5px] w-full">
           <div class="imgtitle absolute bottom-3 left-5 bg-[#333] px-2 rounded-[3px]">BRANDING</div>
         </div>
 
         <div class="text px-5 py-3">
 
-          <div class="heading font-bold text-lg sm:text-xl md:text-xl bxl:text-xl text-[#a3a3a3] 2xl:text-2xl dxl:text-3xl hover-heading">
+          <div class="heading font-bold text-lg xs:text-lg md:text-xl bxl:text-xl text-[#a3a3a3] 2xl:text-2xl dxl:text-3xl hover-heading">
             Role of Public Relations in Building a Fashion Brand
           </div>
-          <div class="info text-[#a3a3a3] sm:text-[14px] md:text-sm lg:text-sm cxl:text-base 2xl:text-base dxl:text-xl">
+          <div class="info text-[#a3a3a3] xs:text-[12px] md:text-sm lg:text-sm cxl:text-base 2xl:text-base dxl:text-xl">
 
             Explore the crucial role of public relations (PR) in shaping and enhancing a fashion brand's identity.
             Effective PR strategies help establish a brand's narrative, manage media relations, and create impactful
@@ -776,21 +809,21 @@
     <div class="newsletter w-full flex rounded-[5px] bg-[#1a1a1a] p-3 gap-2 justify-between">
       <div class="first flex gap-2 dxl:gap-4">
 
-        <div class="img">
+        <div class="img xs:hidden md:flex">
           <img src="Images/ROUGH SKETCHES.jpeg" class="w-20 h-20 rounded-[5px]" alt="">
         </div>
         <div class="writings flex flex-col justify-center">
-          <div class="heading text-base text-[#a3a3a3] font-bold sm:text-xl dxl:text-xl">Newsletter</div>
-          <div class="subheading text-lg text-[#a3a3a3] sm:text-base md:text-[14px] dxl:text-2xl">GET INSIGHTS BEHIND THE SCENES</div>
+          <div class="heading text-base text-[#a3a3a3] font-bold xs:text-sm dxl:text-xl">Newsletter</div>
+          <div class="subheading text-lg text-[#a3a3a3] xs:text-xs md:text-[14px] dxl:text-2xl">GET INSIGHTS BEHIND THE SCENES</div>
         </div>
       </div>
 
 
       <div class="emailbtn flex items-center justify-center gap-2 mt-4">
         <input type="email"
-          class="youremail placeholder:text-white placeholder-white bg-[#333] sm:w-44 w-64 p-2 h-10 text-sm font-bold dxl:text-lg rounded text-whites"
+          class="youremail placeholder:text-white placeholder-white bg-[#333] xs:w-36 md:w-44 w-64 p-2 xs:p-1 md:p-2 h-10 text-sm xs:text-xs md:text-sm font-bold dxl:text-lg rounded text-whites"
           placeholder="Enter your email address" />
-        <button class="button  font-bold px-4 py-2 rounded bg-[#ffd166] text-black ">SUBSCRIBE</button>
+        <button class="button  font-bold px-4 py-2 xs:text-xs md:text-base rounded bg-[#ffd166] text-black ">SUBSCRIBE</button>
       </div>
     </div>
 
@@ -798,24 +831,24 @@
 
     <div class="footer bg-[#1a1a1a]  md:p-2 p-4 rounded-[5px]">
       <!-- Heading Section -->
-      <div class="heading grid sm:grid-cols-4 grid-flow-col grid-cols-4 md:gap-1 gap-4 mb-6">
-        <div class="head1 font-bold text-xl text-[#a3a3a3] sm:text-sm md:text-lg dxl:text-2xl ">VogueVista</div>
-        <div class="head2 font-bold text-xl text-[#a3a3a3] sm:text-sm md:text-lg dxl:text-2xl sm:px-0 md:px-2 px-5 ">PAGES</div>
-        <div class="head3 font-bold text-xl text-[#a3a3a3] sm:text-sm md:text-lg dxl:text-2xl sm:px-0 md:px-2 px-5 ">CMS</div>
-        <div class="head4 font-bold text-xl text-[#a3a3a3] sm:text-sm md:text-lg dxl:text-2xl sm:px-0 md:px-2 px-5 ">UTILITY PAGES</div>
+      <div class="heading grid sm:grid-cols-4 grid-flow-col grid-cols-4 smgap-0 md:gap-1 gap-4 mb-6">
+        <div class="head1 font-bold text-xl text-[#a3a3a3] xs:text-sm md:text-lg dxl:text-2xl ">VogueVista</div>
+        <div class="head2 font-bold text-xl text-[#a3a3a3] xs:text-sm md:text-lg dxl:text-2xl sm:px-0 md:px-2 px-5 ">PAGES</div>
+        <div class="head3 font-bold text-xl text-[#a3a3a3] xs:text-sm md:text-lg dxl:text-2xl sm:px-0 md:px-2 px-5 ">CMS</div>
+        <div class="head4 font-bold text-xl text-[#a3a3a3] xs:text-sm md:text-lg dxl:text-2xl sm:px-0 md:px-2 px-5 ">UTILITY PAGES</div>
       </div>
 
       <!-- Info Sections -->
-      <div class="infographics grid grid-cols-4 md:gap-1 gap-4">
+      <div class="infographics grid grid-cols-4 xs:gap-0 md:gap-1 gap-4">
         <!-- About Section -->
-        <div class="info1 text-[#a3a3a3] text-sm sm:text-xs dxl:text-lg">
+        <div class="info1 text-[#a3a3a3]  text-sm xs:text-xs xs:text-[#1a1a1a] md:text-[#a3a3a3] dxl:text-lg">
           <span class="font-extrabold">VogueVista</span> is a trendsetting fashion brand and agency, offering stylish
           collections while providing expert fashion consultancy and branding services to help other brands succeed.
         </div>
 
         <!-- Pages Section -->
         <div class="info2">
-          <ul class="list-none flex flex-col gap-2 text-lg sm:text-sm md:text-sm dxl:text-xl sm:px-0 md:px-2 px-5">
+          <ul class="list-none flex flex-col gap-2 text-lg xs:text-sm md:text-sm dxl:text-xl sm:px-0 md:px-2 px-5">
             <li
               class="font-medium cursor-pointer text-[#a3a3a3] hover:text-white hover:scale-105 transform transition-all duration-300 ease-in-out">
               Collection</li>
@@ -839,7 +872,7 @@
 
         <!-- CMS Section -->
         <div class="info3 text-[#a3a3a3]">
-          <ul class="list-none flex flex-col gap-2 text-lg sm:text-xs md:text-sm dxl:text-xl sm:px-0 md:px-2 px-5">
+          <ul class="list-none flex flex-col gap-2 text-lg xs:text-xs md:text-sm dxl:text-xl sm:px-0 md:px-2 px-5">
             <li
               class="font-medium cursor-pointer text-[#a3a3a3] hover:text-white hover:scale-105 transform transition-all duration-300 ease-in-out">
               WordPress</li>
@@ -856,7 +889,7 @@
         </div>
 
         <div class="info4 text-[#a3a3a3]">
-          <ul class="list-none flex flex-col gap-2 text-lg sm:text-xs md:text-sm dxl:text-xl sm:px-0 md:px-2 px-5">
+          <ul class="list-none flex flex-col gap-2 text-lg xs:text-xs md:text-sm dxl:text-xl sm:px-0 md:px-2 px-5">
             <li
               class="font-medium cursor-pointer text-[#a3a3a3] hover:text-white hover:scale-105 transform transition-all duration-300 ease-in-out">
               Privacy Policy</li>
@@ -873,34 +906,34 @@
         </div>
 
 
-        <div class="socials flex sm:flex-wrap md:flex-nowrap gap-4 sm:gap-3 md:gap-4">
+        <div class="socials flex xs:flex-wrap md:flex-nowrap gap-4 xs::gap-3 md:gap-4">
           <div class="social1">
-            <img src="Images/github (1).png" alt="" class="w-5 sm:w-4 md:w-5 dxl:w-7 justify-between h-auto icon-hover">
+            <img src="Images/github (1).png" alt="" class="w-5 xs:w-4 md:w-5 dxl:w-7 justify-between h-auto icon-hover">
           </div>
           <div class="social2">
-            <img src="Images/behance1.png" alt="" class="w-5 sm:w-4 md:w-5 dxl:w-7  justify-between h-auto icon-hover">
+            <img src="Images/behance1.png" alt="" class="w-5 xs:w-4 md:w-5 dxl:w-7  justify-between h-auto icon-hover">
           </div>
           <div class="social3">
-            <img src="Images/dribbble.png" alt="" class="w-5 sm:w-4 md:w-5 dxl:w-7 justify-between h-auto icon-hover">
+            <img src="Images/dribbble.png" alt="" class="w-5 xs:w-4 md:w-5 dxl:w-7 justify-between h-auto icon-hover">
           </div>
           <div class="social4">
-            <img src="Images/circle-linkedin-512.webp" alt="" class="w-5 sm:w-4 md:w-5 dxl:w-7 justify-between h-auto icon-hover">
+            <img src="Images/circle-linkedin-512.webp" alt="" class="w-5 xs:w-4 md:w-5 dxl:w-7 justify-between h-auto icon-hover">
           </div>
           <div class="social5">
-            <img src="Images/gmaillogo.webp" alt="" class="w-5 sm:w-4 md:w-5 dxl:w-5 justify-between h-auto icon-hover">
+            <img src="Images/gmaillogo.webp" alt="" class="w-5 xs:w-4 md:w-5 dxl:w-5 justify-between h-auto icon-hover">
           </div>
           <div class="social6">
-            <img src="Images/instagram22.png" alt="" class="w-5 sm:w-4 md:w-5 dxl:w-5 justify-between h-auto icon-hover">
+            <img src="Images/instagram22.png" alt="" class="w-5 xs:w-4 md:w-5 dxl:w-5 justify-between h-auto icon-hover">
           </div>
           <div class="social7">
-            <img src="Images/twitter.png" alt="" class="w-5 sm:w-4 md:w-5 dxl:w-5 justify-between h-auto icon-hover">
+            <img src="Images/twitter.png" alt="" class="w-5 xs:w-4 md:w-5 dxl:w-5 justify-between h-auto icon-hover">
           </div>
         </div>
 
 
         
         <div class="madeby relative right-0">
-          <div class="madebynesh sm:px-1 md:px-2 px-4 bg-[#333] sm:text-sm md:text-sm rounded-[5px] w-[50%] sm:w-[100%] md:w-[70%] lg:w-[70%] xl:w-[55%]   xla:w-[40%] cxl:w-[45%] dxl:w-[40%] sm:mx-0 md:mx-2 mx-4">Made By Nesh! 💖</div>
+          <div class="madebynesh xs:px-1 md:px-2 px-4 bg-[#333] xs:text-sm md:text-sm rounded-[5px] w-[50%] xs:w-[100%] md:w-[70%] lg:w-[70%] xl:w-[55%]   xla:w-[40%] cxl:w-[45%] dxl:w-[40%] xs:mx-4 md:mx-2 mx-4">Made By Nesh! 💖</div>
         </div>
         
         <div class="blank">
@@ -929,13 +962,13 @@
         </div> -->
         <div class="meetus w-full items-center justify-center pt-0 gap-4 md:px-1 px-4 hidden md:flex">
           <div class="logo">
-            <img src="Images/darkback.jpg" alt="Dark Background" class="sm:w-10 md:w-6 w-10 dxl:w-12 md:h-6 h-10 dxl:h-12 rounded-full">
+            <img src="Images/darkback.jpg" alt="Dark Background" class="xs:w-10 md:w-6 w-10 dxl:w-12 md:h-6 h-10 dxl:h-12 rounded-full">
           </div>
-          <div class="text text-center sm:text-left">
+          <div class="text text-center xs:text-left">
             <div class="heading text-base md:text-xs font-bold text-[#a3a3a3] dxl:text-xl">
               Meet us in real life.
             </div>
-            <div class="places flex flex-col sm:flex-row text-[12px] gap-2 sm:gap-3">
+            <div class="places flex flex-col xs:flex-row text-[12px] gap-2 xs:gap-3">
               <div class="place1 cursor-pointer hover:underline md:text-[8px] lg:text-[8px] xl:text-[10px] dxl:text-[14px] text-[#a3a3a3] text-[10px]">Toronto</div>
               <div class="place2 cursor-pointer hover:underline md:text-[8px] lg:text-[8px] xl:text-[10px] dxl:text-[14px] text-[#a3a3a3] text-[10px]">California</div>
               <div id="dynamicContent" class="place3 cursor-pointer hover:underline md:text-[8px] lg:text-[8px] xl:text-[10px] dxl:text-[14px] text-[#a3a3a3] text-[10px]">View All Stores and Popups</div>
@@ -972,6 +1005,15 @@
 
   // Update content on resize
   window.addEventListener('resize', updateContent);
+
+  document.addEventListener("DOMContentLoaded", function(){
+    const menuIcon = document.getElementById("menuicon");
+    const menuList = document.getElementById("menulist");
+
+    menuIcon.addEventListener("click", function(){
+      console.log("Works")
+    })
+  })
 </script>
 
 </html>
